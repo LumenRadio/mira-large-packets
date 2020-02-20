@@ -143,7 +143,14 @@ int large_packet_send_whole_mask_get(
         *mask = 0;
         return -1;
     }
-    *mask = (((uint64_t) 1) << n_sub_packets) - 1;
+
+    /* Use hard-coded value since it's coupled to the variable type. */
+    if (n_sub_packets == 64) {
+        *mask = UINT64_MAX;
+    } else {
+        *mask = (((uint64_t) 1) << n_sub_packets) - 1;
+    }
+
     return 0;
 }
 

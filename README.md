@@ -1,7 +1,8 @@
 # Large Packet Application
 
-This application demonstrates a way to send large packets into sub-packets.
-It monitors incoming sub-packets and requests missing sub-packets if needed.
+This application demonstrates a way to send large packets into sub-packets with
+MiraOS v2. It monitors incoming sub-packets and requests missing sub-packets if
+needed.
 
 ## Principle
 
@@ -158,22 +159,3 @@ This version does not check that all sub-packets come from the same expected sou
 Large packets reception could abort itself after a time-out, regardless of
 number of attempted new requests.
 
-# Disclaimer
-Copyright (c) 2020, LumenRadio AB All rights reserved.
-
-The software is provided as an example. The software is delivered without
-guarantees.
-
-No guarantees is taken for protocol stability of the software, and future
-updates may change API.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS ``AS IS''
-AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
-ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
-(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
-LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
-ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
